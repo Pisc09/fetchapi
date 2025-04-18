@@ -2,6 +2,7 @@ const BASE_URL = "https://jsonplaceholder.typicode.com/";
 console.log(BASE_URL);
 
 let usersName;
+let showUsers;
 const h2 = document.querySelector("h2");
 
 async function callApi() {
@@ -16,10 +17,8 @@ async function callApi() {
 }
 callApi();
 
-let showUsers;
-
 callApi().then((usersName) => {
   showUsers = usersName;
   console.log(showUsers);
-  h2.append(usersName.email);
+  h2.append(usersName.name);
 });
