@@ -1,9 +1,9 @@
-const BASE_URL = fetch("https://jsonplaceholder.typicode.com/");
+const BASE_URL = "https://jsonplaceholder.typicode.com/";
+console.log(BASE_URL);
 
 async function nameApi() {
-  fetch(BASE_URL + "todos/");
-  const response = await BASE_URL;
-  const data = response.json();
+  const response = await fetch(BASE_URL + "users/1");
+  const data = await response.json();
   console.log(data);
   return data;
 }
