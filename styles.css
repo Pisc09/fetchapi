@@ -29,7 +29,29 @@ body {
 h1 {
   font-size: 3rem;
 }
-
+#contentSearch {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  width: 70em;
+}
+input {
+  width: 25em;
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0 1.5em;
+  text-decoration: none;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -47,6 +69,12 @@ td {
   border: 1px solid #ccc;
   padding: 12px 15px;
   text-align: left;
+}
+th:first-child,
+td:first-child {
+  min-width: 20px;
+  text-align: center;
+  padding: 0.5em;
 }
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
