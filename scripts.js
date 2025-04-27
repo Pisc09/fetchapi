@@ -1,7 +1,7 @@
 const BASE_URL = "https://jsonplaceholder.typicode.com/";
 console.log(BASE_URL);
 
-const dataUsers = "users/";
+const dataUser = "users/";
 
 const h1 = document.querySelector("h1");
 
@@ -31,7 +31,7 @@ function createTd(content) {
 }
 
 async function callApi() {
-  const response = await fetch(BASE_URL + dataUsers);
+  const response = await fetch(BASE_URL + dataUser);
   const data = await response.json();
   console.log(data);
 
@@ -65,7 +65,7 @@ btnSearch.addEventListener("click", async () => {
   const searchValue = inputSearch.value;
   console.log("Valeur rechercher : ", searchValue);
 
-  const urlName = `${BASE_URL}${dataUsers}?name=${searchValue}`;
+  const urlName = `${BASE_URL}${dataUser}?name=${searchValue}`;
   console.log("Valeur de l'url : ", urlName);
 
   const response = await fetch(urlName);
