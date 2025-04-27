@@ -1,0 +1,8 @@
+Étape 						| Statut
+
+1. Créer input + bouton 			| ✅
+2. Capter la valeur de l'input 			| ✅
+3. Construire une nouvelle URL 			| ✅
+4. Appeler l'API avec la nouvelle URL 		| ✅
+5. Vider l'ancien tableau 			| ✅
+6. Afficher les nouveaux résultats 		| ✅
